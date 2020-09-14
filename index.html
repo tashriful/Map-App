@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Map App</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="map.css">
+    <script type="text/javascript" src="map.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Input Form</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="lname">Current Cordinates:</label>
+                        <input type="text" id="lan" name="lan"><br><br>
+                        <label for="lname">Name:</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        <button type="button" onclick="getInputValue();">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--Map api  -->
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsSR8KXyvC7AGshxW9cTkiDRPXTTeJ1KU&callback=initMap">
+    </script>
+
+</body>
+
+</html>
